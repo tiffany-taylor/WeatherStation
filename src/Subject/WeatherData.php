@@ -1,12 +1,11 @@
 <?php declare(strict_types=1);
 
+namespace Subject;
 
-namespace WeatherStation;
+require_once __DIR__ . '/../../vendor/autoload.php';
 
-require_once __DIR__ . '/Subject.php';
-require_once __DIR__ . '/Observer.php';
-require_once __DIR__ . '/DisplayElement.php';
-require_once __DIR__ . '/CurrentConditionDisplay.php';
+use Subject;
+use Observer;
 
 class WeatherData implements Subject
 {

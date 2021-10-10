@@ -1,8 +1,6 @@
 <?php
 
-
-namespace WeatherStation;
-
+require_once __DIR__ . '/../vendor/autoload.php';
 
 interface DisplayElement
 {
