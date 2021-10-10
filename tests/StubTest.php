@@ -1,14 +1,13 @@
 <?php declare(strict_types=1);
-use WeatherStation\CurrentConditionDisplay;
-use WeatherStation\WeatherData;
-use WeatherStation\Observer;
-use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Subject\WeatherData;
+use PHPUnit\Framework\TestCase;
+
 class StubTest extends TestCase
 {
-    public function testObserversAreUpdated()
+    public function testObserversAreUpdated(): void
     {
         $stub = $this->createMock(Observer::class);
 
@@ -25,7 +24,7 @@ class StubTest extends TestCase
 
     }
 
-    public function testObserversAreNotUpdated()
+    public function testObserversAreNotUpdated(): void
     {
         $stub = $this->createMock(Observer::class);
 
